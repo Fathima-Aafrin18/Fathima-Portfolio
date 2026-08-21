@@ -1,0 +1,998 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fathima Aafrin R H | Portfolio</title>
+
+  <!-- Luxury Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --bg: #111111;
+      --bg-secondary: #181818;
+      --card: #1F1F1F;
+
+      --gold: #D4AF37;
+      --gold-accent: #FFD700;
+      --glow: #F5C542;
+
+      --text: #FFFFFF;
+      --text-secondary: #BDBDBD;
+
+      --border: rgba(212,175,55,0.3);
+    }
+
+
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+
+      background: var(--bg);
+      color: var(--text);
+
+      overflow-x: hidden;
+    }
+
+
+    /* =========================
+       HEADINGS
+    ========================= */
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Cinzel', serif;
+
+      color: var(--gold);
+
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+    }
+
+
+    /* =========================
+       HERO SECTION
+    ========================= */
+
+    .hero {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      position: relative;
+
+      background: var(--bg-secondary);
+
+      padding: 40px 20px;
+    }
+
+
+    .hero h1 {
+
+      font-size: 2rem;
+
+      font-weight: 500;
+
+      color: var(--text);
+
+      letter-spacing: 2px;
+    }
+
+
+    .hero h2 {
+
+      font-size: 4.2rem;
+
+      font-weight: 700;
+
+      line-height: 1.1;
+
+      margin: 12px 0;
+    }
+
+
+    .typing {
+
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 1.35rem;
+
+      font-weight: 400;
+
+      color: var(--text-secondary);
+
+      letter-spacing: 1px;
+
+      margin-top: 1rem;
+
+      height: 30px;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .buttons {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+
+      margin-top: 30px;
+    }
+
+
+    .luxury-btn {
+
+      padding: 12px 24px;
+
+      border: 2px solid var(--gold);
+
+      background: transparent;
+
+      color: var(--gold);
+
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 1rem;
+
+      font-weight: 600;
+
+      letter-spacing: 0.8px;
+
+      cursor: pointer;
+
+      transition: all 0.3s ease;
+
+      border-radius: 30px;
+
+      text-decoration: none;
+
+      display: inline-block;
+    }
+
+
+    .luxury-btn:hover {
+
+      background: var(--gold);
+
+      color: var(--bg);
+
+      box-shadow: 0 0 15px var(--glow);
+
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+
+      padding: 80px 20px;
+
+      max-width: 1000px;
+
+      margin: auto;
+    }
+
+
+    section h2 {
+
+      font-size: 2.6rem;
+
+      margin-bottom: 35px;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .card {
+
+      background: var(--card);
+
+      padding: 20px;
+
+      border-radius: 12px;
+
+      border: 1px solid var(--border);
+
+      margin-bottom: 20px;
+
+      font-size: 1.05rem;
+
+      font-weight: 400;
+
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+
+    .card:hover {
+
+      transform: translateY(-5px);
+
+      box-shadow: 0 0 20px var(--glow);
+    }
+
+
+    .card h3 {
+
+      font-family: 'Cinzel', serif;
+
+      font-size: 1.6rem;
+
+      font-weight: 600;
+
+      margin-bottom: 12px;
+    }
+
+
+    .card p {
+
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 1.05rem;
+
+      line-height: 1.9;
+
+      color: var(--text-secondary);
+
+      margin-bottom: 8px;
+    }
+
+
+    .card p:last-child {
+
+      margin-bottom: 0;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-info strong {
+
+      color: var(--gold);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      text-align: center;
+
+      padding: 20px;
+
+      border-top: 1px solid var(--border);
+
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 0.95rem;
+
+      color: var(--text-secondary);
+    }
+
+
+    /* =========================
+       RESPONSIVE DESIGN
+    ========================= */
+
+    @media (max-width: 768px) {
+
+      body {
+        font-size: 16px;
+      }
+
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+
+      .hero h2 {
+        font-size: 2.7rem;
+      }
+
+
+      .typing {
+        font-size: 1.05rem;
+      }
+
+
+      section h2 {
+        font-size: 2.1rem;
+      }
+
+
+      .buttons {
+        flex-direction: column;
+
+        width: 100%;
+      }
+
+
+      .luxury-btn {
+        width: 220px;
+
+        text-align: center;
+      }
+    }
+
+
+    @media (max-width: 480px) {
+
+      .hero h2 {
+        font-size: 2.1rem;
+      }
+
+
+      .hero h1 {
+        font-size: 1.3rem;
+      }
+
+
+      section {
+        padding: 60px 15px;
+      }
+
+
+      section h2 {
+        font-size: 1.8rem;
+      }
+
+
+      .card {
+        padding: 18px;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================= -->
+
+  <section class="hero" id="hero">
+
+    <h1>Hello, I'm</h1>
+
+    <h2>Fathima Aafrin R H</h2>
+
+    <div class="typing" id="typing"></div>
+
+
+    <div class="buttons">
+
+      <!-- DOWNLOAD RESUME -->
+      <a
+        href="Fa Resume.pdf"
+        class="luxury-btn"
+        download="Fathima_Aafrin_Resume.pdf"
+      >
+        Download Resume
+      </a>
+
+
+      <!-- VIEW PROJECTS -->
+      <a
+        href="#projects"
+        class="luxury-btn"
+      >
+        View Projects
+      </a>
+
+
+      <!-- CONTACT -->
+      <a
+        href="#contact"
+        class="luxury-btn"
+      >
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ABOUT SECTION
+  ========================= -->
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+
+    <div class="card">
+
+      <p>
+        I am a motivated MCA student and aspiring Full Stack Developer
+        with a strong foundation in programming, web development,
+        databases, and software engineering. I enjoy transforming ideas
+        into practical, user-friendly digital solutions and continuously
+        exploring new technologies to improve my development skills.
+      </p>
+
+
+      <p>
+        I have hands-on experience working with technologies such as
+        Python, Java, JavaScript, React, HTML, CSS, Django, Node.js,
+        MySQL, and MongoDB. I am also interested in Artificial Intelligence,
+        Machine Learning, IoT, and Cybersecurity, and I enjoy applying
+        these technologies to solve real-world problems.
+      </p>
+
+
+      <p>
+        Through academic projects, internships, hackathons, and continuous
+        coding practice, I have developed experience in developing
+        responsive applications, working with databases, debugging
+        applications, testing software, and solving technical problems.
+      </p>
+
+
+      <p>
+        Currently, I am pursuing my MCA and actively looking for
+        opportunities where I can learn from experienced professionals,
+        contribute to meaningful projects, and grow as a Software Developer.
+        I am always excited to take on new challenges, learn emerging
+        technologies, and turn innovative ideas into working solutions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       SKILLS SECTION
+  ========================= -->
+
+  <section id="skills">
+
+    <h2>Technical Skills</h2>
+
+
+    <div class="card">
+
+      <h3>Programming Languages</h3>
+
+      <p>
+        Python, JavaScript, Java, Visual Basic
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Web Development</h3>
+
+      <p>
+        HTML5, CSS3, Bootstrap, React, React Native
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Machine Learning & AI</h3>
+
+      <p>
+        Machine Learning, NLP, TF-IDF, Scikit-learn
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Databases</h3>
+
+      <p>
+        MySQL, SQL, MongoDB, SQLite
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Tools & Technologies</h3>
+
+      <p>
+        GitHub, Linux Shell, UiPath, Canva
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Testing</h3>
+
+      <p>
+        Manual Testing, SDLC, STLC
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       PROJECTS SECTION
+  ========================= -->
+
+  <section id="projects">
+
+    <h2>Featured Project</h2>
+
+
+    <div class="card">
+
+      <h3>Fake News Detection System</h3>
+
+
+      <p>
+        Developed a machine learning-based web application to classify
+        news articles as fake or genuine using Natural Language Processing
+        and TF-IDF feature extraction.
+      </p>
+
+
+      <p>
+        Built a Flask-based application with a responsive interface,
+        user authentication, and SQLite database integration.
+      </p>
+
+
+      <p>
+        Multiple machine learning models were trained and evaluated using
+        accuracy, precision, recall, and F1-score to improve prediction
+        performance.
+      </p>
+
+
+      <p>
+        The system applies text preprocessing and machine learning
+        techniques to help users quickly verify the credibility of
+        online news and increase awareness about misinformation.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       EXPERIENCE SECTION
+  ========================= -->
+
+  <section id="experience">
+
+    <h2>Professional Experience</h2>
+
+
+    <div class="card">
+
+      <h3>
+        Software Development Intern | Livewire - Hopes, Coimbatore | 2025
+      </h3>
+
+
+      <p>
+        Assisted in frontend and backend development tasks for software
+        projects.
+      </p>
+
+
+      <p>
+        Worked on developing user-friendly interfaces and integrating
+        backend functionalities.
+      </p>
+
+
+      <p>
+        Performed debugging, testing, and code improvement activities.
+      </p>
+
+
+      <p>
+        Gained practical exposure to real-world software development
+        practices and the software development lifecycle.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       HACKATHONS
+  ========================= -->
+
+  <section id="hackathons">
+
+    <h2>Hackathons & Achievements</h2>
+
+
+    <div class="card">
+
+      <h3>UiPath Hackathon</h3>
+
+      <p>
+        Developed WhatsApp message automation using UiPath activities
+        to streamline communication with multiple contacts.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Smart India Hackathon</h3>
+
+      <p>
+        Participated in Smart India Hackathon and worked as a team
+        to develop a prototype for disaster management using
+        AI-powered UAV drones.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       EDUCATION SECTION
+  ========================= -->
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+
+    <div class="card">
+
+      <h3>
+        Master of Computer Applications (MCA)
+      </h3>
+
+      <p>
+        KGiSL Institute of Information Management
+      </p>
+
+      <p>
+        2025 – Present
+      </p>
+
+      <p>
+        Focus: Web Development and Cyber Security
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Bachelor of Computer Applications (BCA)
+      </h3>
+
+      <p>
+        KG College of Arts and Science
+      </p>
+
+      <p>
+        2022 – 2025
+      </p>
+
+      <p>
+        Relevant Coursework: Data Structures, Algorithms,
+        Computer Networks, Database Management Systems
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>
+        Higher Secondary Education
+      </h3>
+
+      <p>
+        Chandra Matriculation Higher Secondary School
+      </p>
+
+      <p>
+        2021 – 2022
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CERTIFICATIONS
+  ========================= -->
+
+  <section id="certifications">
+
+    <h2>Certifications</h2>
+
+
+    <div class="card">
+
+      <p>
+        • IBM – Enterprise Design Thinking Practitioner
+      </p>
+
+      <p>
+        • IBM – Getting Started with Artificial Intelligence
+      </p>
+
+      <p>
+        • IBM – Build Your First Chatbot
+      </p>
+
+      <p>
+        • ServiceNow – Welcome to ServiceNow
+      </p>
+
+      <p>
+        • ServiceNow – Automated Test Framework
+      </p>
+
+      <p>
+        • ServiceNow – Flow Designer
+      </p>
+
+      <p>
+        • ServiceNow – UI Builder
+      </p>
+
+      <p>
+        • GUVI – Python
+      </p>
+
+      <p>
+        • MongoDB – Introduction to MongoDB
+      </p>
+
+      <p>
+        • Coursera – Cloud Programming with Python
+      </p>
+
+      <p>
+        • UiPath
+      </p>
+
+      <p>
+        • Full Stack AWS Application
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT SECTION
+  ========================= -->
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+
+    <div class="card contact-info">
+
+      <p>
+        <strong>Email:</strong>
+        aafrinrh@gmail.com
+      </p>
+
+
+      <p>
+        <strong>Phone:</strong>
+        +91 63822 41363
+      </p>
+
+
+      <p>
+        <strong>Location:</strong>
+        Coimbatore, Tamil Nadu
+      </p>
+
+
+      <p>
+        <strong>GitHub:</strong>
+        Fathima-Aafrin18
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <p>
+      © 2026 Designed & Developed by Fathima Aafrin R H
+    </p>
+
+  </footer>
+
+
+
+  <!-- =========================
+       TYPING EFFECT
+  ========================= -->
+
+  <script>
+
+    const roles = [
+      "Full Stack Developer",
+      "Python Developer",
+      "Web Developer",
+      "Software Developer",
+      "MCA Student"
+    ];
+
+
+    const typingElement =
+      document.getElementById("typing");
+
+
+    let roleIndex = 0;
+
+    let characterIndex = 0;
+
+    let deleting = false;
+
+
+    function typeEffect() {
+
+      const currentRole =
+        roles[roleIndex];
+
+
+      if (!deleting) {
+
+        typingElement.textContent =
+          currentRole.substring(
+            0,
+            characterIndex + 1
+          );
+
+        characterIndex++;
+
+
+        if (
+          characterIndex ===
+          currentRole.length
+        ) {
+
+          deleting = true;
+
+          setTimeout(
+            typeEffect,
+            1500
+          );
+
+          return;
+        }
+
+      } else {
+
+        typingElement.textContent =
+          currentRole.substring(
+            0,
+            characterIndex - 1
+          );
+
+        characterIndex--;
+
+
+        if (characterIndex === 0) {
+
+          deleting = false;
+
+          roleIndex =
+            (roleIndex + 1) %
+            roles.length;
+        }
+
+      }
+
+
+      setTimeout(
+        typeEffect,
+        deleting ? 60 : 100
+      );
+
+    }
+
+
+    typeEffect();
+
+  </script>
+
+
+</body>
+</html>
